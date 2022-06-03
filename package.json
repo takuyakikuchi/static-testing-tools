@@ -5,7 +5,8 @@
   "license": "GPLv3",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "lint": "eslint --ignore-path .gitignore ."
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\""
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
