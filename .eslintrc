@@ -9,7 +9,7 @@
       "jsx": true
     }
   },
-  "extends": ["eslint:recommended"],
+  "extends": ["eslint:recommended", "eslint-config-prettier"],
   "rules": {
     // Disallows strict mode directives as all files will be compiled with Babel that will add the 'use strict' anyway.
     "strict": ["error", "never"]
