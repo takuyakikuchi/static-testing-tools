@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    // Since Babel does compiling, tell TypeScript not to emit.
+    "noEmit": true,
+    // Where to look for TypeScript files.
+    "baseUrl": "./src"
+  }
+}
