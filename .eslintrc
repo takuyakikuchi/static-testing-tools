@@ -16,5 +16,22 @@
   },
   "env": {
     "browser": true
-  }
+  },
+  "overrides": [
+    {
+      "files": "**/*.+(ts|tsx)",
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      // This plugin disables some of those rules that TypeScript renders unnecessary.
+      "plugins": ["@typescript-eslint/eslint-plugin"],
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+        // Disable all the rules that typescript-eslint adds that we don't necessarily need because of Prettier.
+        // "eslint-config-prettier/@typescript-eslint"
+      ]
+    }
+  ]
 }
